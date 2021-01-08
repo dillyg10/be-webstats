@@ -1,0 +1,47 @@
+{
+  "name": "be-webstats",
+  "version": "0.1.0",
+  "description": "BlockEmpires web stats",
+  "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "antd": "^4.7.2",
+    "core-js": "^3.8.2",
+    "easy-peasy": "^4.0.1",
+    "grommet": "^2.16.0",
+    "grommet-icons": "^4.5.0",
+    "lodash": "^4.17.20",
+    "luxon": "^1.25.0",
+    "navi": "^0.14.0",
+    "net": "^1.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "react-image": "^4.0.3",
+    "react-navi": "^0.14.4",
+    "react-reveal": "^1.2.2",
+    "react-scroll-parallax": "^2.3.5",
+    "regenerator-runtime": "^0.13.7",
+    "rest": "^1.3.1",
+    "styled-components": "^5.2.1"
+  },
+  "scripts": {
+    "watch": "webpack --watch -d --output ./target/classes/static/built/bundle.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "less": "^4.0.0",
+    "less-loader": "^7.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
