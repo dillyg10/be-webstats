@@ -10,14 +10,16 @@ const BackgroundImageWithGradient = styled(Image)`
   transition: opacity 500ms ease-in-out;
 `;
 
-
+// main layout for the site
 export const ResourceLayout = ({
                                                                   children,
-                                                              }) => {
+                                                                   }) => {
+    // background switcher
     const isPlayer = useActive("/player", { exact: false }) || useActive("/player-leaderboard", { exact: false });
     const isEmpire = useActive("/empire", { exact: false });
     const isRaid = useActive("/raid", { exact: false });
 
+    // Wraps the page in the header, footer, and background objects
     return (
         <>
             <Box

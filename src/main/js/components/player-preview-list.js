@@ -3,7 +3,7 @@ import { Box, Grid, ResponsiveContext } from "grommet";
 
 import { PlayerPreview } from "./player-preview";
 
-
+// list of player previews
 export const PlayerPreviewList= ({
                                                                         players,
                                                                     }) => {

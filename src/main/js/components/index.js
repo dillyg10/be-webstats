@@ -1,3 +1,4 @@
+// used to organize the components directory to make importing easier
 export * from './carousel';
 export * from './icon';
 export * from './feature-tabs';

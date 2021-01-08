@@ -7,7 +7,7 @@ import { EmpireBanner } from "./empire-banner";
 import { ProgressMeter } from "./progress-meter";
 import { EmpireHeader } from "./empire-header";
 
-
+// detailed empire info
 export const EmpireInfo = ({
                                                           empire,
                                                           size,

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/camelcase */
 import React, { useMemo } from "react";
 import {
     GiAbstract091,
@@ -25,6 +24,7 @@ import {
 } from "react-icons/fa";
 import { BsExclamationCircle } from "react-icons/bs";
 
+// all available icons
 const IconMap = {
     destroy_structure: GiFlame,
     repair_structure: GiAnvil,
@@ -46,6 +46,7 @@ const IconMap = {
     arrow_right: FaArrowRight,
 };
 
+// icon object
 export const Icon = ({
                                               type,
                                               size = "medium",
@@ -74,6 +75,7 @@ export const Icon = ({
     return <Icon size={iconSize} color={color} />;
 };
 
+// icon specific for player roles
 export const RoleIcon = ({ role }) => {
     let icon = null;
     let tip = null;

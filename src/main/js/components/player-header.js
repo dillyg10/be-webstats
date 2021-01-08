@@ -3,6 +3,7 @@ import { Box, Text } from "grommet";
 
 import { PlayerMediumHeader, PlayerSmallHeader } from "./svgs";
 
+// player header used for info box
 export const PlayerHeader = ({
                                                               size = "medium",
                                                               leftText,

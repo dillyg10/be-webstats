@@ -5,6 +5,7 @@ import { useNavigation } from "react-navi";
 import { PlayerInfo, SpinLoader } from "./";
 import {queries} from "../app";
 
+// internal object render
 const PlayerListObjectInternal = ({player, size}) => {
     const navigation = useNavigation();
 
@@ -32,6 +33,7 @@ const PlayerListObjectInternal = ({player, size}) => {
     )
 }
 
+// shows list of players with more info
 export class PlayerList extends React.Component {
 
     constructor(props) {

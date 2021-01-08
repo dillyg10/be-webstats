@@ -19,6 +19,7 @@ const ReleaseText = styled(Text)`
   color: #dadada;
 `;
 
+// side header
 export const Header = () => {
     const navigation = useNavigation();
 
@@ -108,7 +109,7 @@ export const Header = () => {
                             </>
                         ) : (
                             <>
-                                {false ?  null : (
+                                {(
                                     <Box
                                         direction="row"
                                         justify="center"

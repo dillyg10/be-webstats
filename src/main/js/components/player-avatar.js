@@ -7,6 +7,8 @@ import { BaseRenderWrapper } from "./base-renderer";
 
 const URL = "https://crafatar.com/avatars";
 
+// uses the crafatar api to render a player head 2d
+
 const PlayerAvatarInternal = ({
                                                                minecraftPlayerId,
                                                                size,

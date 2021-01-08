@@ -9,14 +9,10 @@ const COLORS = {
         primaryColor: "#FFB53A",
         secondaryColor: "#E8A332",
         textColor: "accent-1",
-    },
-    raid: {
-        primaryColor: "#C50E0E",
-        secondaryColor: "#871313",
-        textColor: "#EEECEC",
-    },
+    }
 };
 
+// header for empire info box
 export const EmpireHeader = ({
                                                               size = "medium",
                                                               leftText,

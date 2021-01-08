@@ -10,8 +10,7 @@ import { RoleIcon } from "./icon";
 import { PlayerHeader } from "./player-header";
 import {queries} from "../app";
 
-// import { EmpireBanner } from "../empire-banner";
-
+// internal empire preview render
 class EmpirePreviewInternal extends React.Component{
 
     constructor(props) {
@@ -47,6 +46,7 @@ class EmpirePreviewInternal extends React.Component{
     }
 }
 
+// represents a semi-detailed info box about a player
 export const PlayerInfo = ({
                                                           player,
                                                           size = "medium",

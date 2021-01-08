@@ -3,6 +3,7 @@ import { Box, Text } from "grommet";
 
 import { Icon } from "./icon";
 
+// renders a box with a stats icon and value
 export const StatBlock = ({
                                                         iconType,
                                                         value,

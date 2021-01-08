@@ -8,6 +8,7 @@ const StickyInfoBox = styled.div`
   position: sticky;
 `;
 
+// used for empire page and player page
 export const ResourcePage = ({
                                                               children,
                                                               sideContent,

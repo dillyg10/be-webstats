@@ -1,11 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import { Box, Image, ResponsiveContext, Text } from "grommet";
 
-import TestSvg from "../assets/svgs/test.svg";
 import {InfoBlock} from "./info-block";
-import {Carousel} from "./carousel";
 
+// simple splash used for home page
 export function Splash() {
     return (
         <ResponsiveContext.Consumer>

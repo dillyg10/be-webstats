@@ -7,9 +7,8 @@ const ImageWrapper = styled.div`
   z-index: 10;
 `;
 
-// 100, 200
-// 80, 164
 
+// empire banner renderer, takes in a base64 image and transposes it to look 3d
 export const EmpireBanner = ({
                                                               bannerSrc,
                                                               face = "left",

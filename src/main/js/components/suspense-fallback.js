@@ -5,6 +5,7 @@ import { useIsMounted } from "../api/use-is-mounted";
 
 import styles from "../assets/styles/suspense-fallback.less";
 
+// helps with component transition between pages on the application
 export const SuspenseFallback = () => {
     const isMounted = useIsMounted();
     const [visible, setVisible] = useState(false);

@@ -6,7 +6,7 @@ import { useNavigation } from "react-navi";
 import { PlayerAvatar } from "./player-avatar";
 import { RoleIcon } from "./icon";
 
-
+// shows basic info about a player
 export const PlayerPreview = ({
                                                                 player,
                                                                 size = "medium",

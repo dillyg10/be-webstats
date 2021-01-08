@@ -1,11 +1,8 @@
 import React from "react";
 import { Box, Heading, Image, ResponsiveContext, Text } from "grommet";
 import { Link } from "react-navi";
-import { ColorType } from "grommet/utils";
 import { Fade } from "react-reveal";
 
-// import { EmpireList, PlayerList } from "../../containers";
-// import { Icon, Splash } from "../../components";
 import {
     Icon,
     Splash,
@@ -17,6 +14,7 @@ import {
 
 import { route } from "navi";
 
+// feature selection screen for marketing
 const FEATURES = [
     {
         id: "empires",
@@ -34,7 +32,7 @@ const FEATURES = [
                     It's an all out war to become the best Empire in the world!
                 </Text>
                 <Text type="secondary">
-                    Empires are cool and stuff you know what I mean diggity dawg dawg.
+                    Your empire can rise to the top to become the best around.
                 </Text>
             </Box>
         ),
@@ -53,7 +51,7 @@ const FEATURES = [
                         bottom: "medium",
                     }}
                 >
-                    Raid it all day
+                    Raid empires in a quest to become the best player in the world!
                 </Text>
                 <Text type="secondary">Raid..</Text>
             </Box>
@@ -73,7 +71,7 @@ const FEATURES = [
                         bottom: "medium",
                     }}
                 >
-                    IBuuawe
+                    Build your own unique plot and stand out amongst other players.
                 </Text>
                 <Text type="secondary">awefawe</Text>
             </Box>
@@ -93,7 +91,7 @@ const FEATURES = [
                         bottom: "medium",
                     }}
                 >
-                    dddd
+                    We love our community, and promise to maintain honor and dignity.
                 </Text>
                 <Text type="secondary">asd</Text>
             </Box>
@@ -102,6 +100,7 @@ const FEATURES = [
     },
 ];
 
+// migrates the features
 const HighlightSection = ({
                                                                children,
                                                                title,
@@ -133,6 +132,7 @@ const HighlightSection = ({
     </Box>
 );
 
+// home page for the site, contains game info, featured players and empires
 export const Home = () => {
     return (
         <ResponsiveContext.Consumer>
@@ -265,4 +265,5 @@ export const Home = () => {
     );
 };
 
+// home route object
 export const HomeRoute = route({ view: <Home /> });

@@ -1,5 +1,5 @@
 'use strict';
-
+// Connection bridge used to interpret REST requests.
 const rest = require('rest');
 const defaultRequest = require('rest/interceptor/defaultRequest');
 const mime = require('rest/interceptor/mime');

@@ -13,7 +13,7 @@ import {
 
 import {queries} from "../../app";
 
-
+// sidebar for empire info
 const EmpireSideContent = ({ empire }) => (
     <ResponsiveContext.Consumer>
         {(size) => (
@@ -25,6 +25,7 @@ const EmpireSideContent = ({ empire }) => (
     </ResponsiveContext.Consumer>
 );
 
+// empire info page
 export class Empire extends React.Component {
 
     constructor(props) {
@@ -141,6 +142,7 @@ export class Empire extends React.Component {
     }
 }
 
+// empire route object
 export const EmpireRoute = route((req) => {
     return { view: <Empire name={req.params.name} /> };
 });

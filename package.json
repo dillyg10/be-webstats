@@ -5,6 +5,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
     "antd": "^4.7.2",
+    "classnames": "^2.2.6",
     "core-js": "^3.8.2",
     "easy-peasy": "^4.0.1",
     "grommet": "^2.16.0",

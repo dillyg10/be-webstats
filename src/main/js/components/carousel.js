@@ -1,6 +1,7 @@
 import { Box, Image } from "grommet";
 import React from "react";
 
+// unused, will eventually be for home site to have rotating image
 export function Carousel(props) {
     return (<Box background="#1C232D" pad="small" flex="grow" height="100%">
         <Image

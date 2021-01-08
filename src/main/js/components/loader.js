@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 
 import styles from "../assets/styles/loader.less";
 
+// represents a loader object
 const LoaderWrapper= ({
                                                          children,
                                                      }) => {

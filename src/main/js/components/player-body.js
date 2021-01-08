@@ -7,6 +7,7 @@ import { BaseRenderWrapper } from "./base-renderer";
 
 const URL = "https://crafatar.com/renders/body/";
 
+// uses the craftatar api to render a 3d player model
 export const PlayerBodyInternal = ({
                                                                   minecraftPlayerId,
                                                                   size = "medium",

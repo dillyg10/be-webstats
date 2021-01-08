@@ -1,8 +1,7 @@
 import React from "react";
 import { Box, Heading, Video } from "grommet";
 
-import { FeatureTabItem } from "./feature-tabs";
-
+// used for the feature box
 export const FlatFeatures = ({ items }) => (
     <Box gap="large">
         {items.map((item) => (

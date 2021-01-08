@@ -6,7 +6,6 @@ import { lazy, mount, redirect, withView } from "navi";
 import { NotFoundBoundary, Router, View } from "react-navi";
 import {Layout, SuspenseFallback, NotFound} from "./components";
 import {ResourceLayout} from "./resource-layout";
-// import { ResolvableMatcher } from "navi/dist/types/Matcher";
 
 import ReactDOM from 'react-dom';
 import {Home} from "./routes/home/";
@@ -14,6 +13,8 @@ import {changeFactoryDefault} from './api/change-factory-default'
 
 const client = require('./client');
 
+
+// navi routes for single paged application
 const NAV_LINKS = {
     HOME: {
         display: "Home",
@@ -41,6 +42,7 @@ const NAV_LINKS = {
     }
 };
 
+// matches our routes to code
 export function routeMatcher(
     dirName,
     matcherName,
@@ -69,11 +71,11 @@ const routes = mount({
         mount({
             [NAV_LINKS.EMPIRE.href]: lazy(routeMatcher("empire", "Empire")),
             [NAV_LINKS.PLAYER.href]: lazy(routeMatcher("player", "Player"))
-            // [NAV_LINKS.RAID.href]: lazy(routeMatcher("raid", "Raid")),
         }),
     ),
 });
 
+// main APP object to handle routing
 export const App = () => {
     const notFound = useCallback(() => <NotFound/>, []);
 
@@ -90,12 +92,14 @@ export const App = () => {
     )
 }
 
+// REST query api
 const ROOT = '/api'
 const PLAYER_SEARCH_ROOT = `${ROOT}/players/search/`;
 const EMPIRE_SEARCH_ROOT = `${ROOT}/empires/search/`
 
 class Queries {
 
+    // gets a player by a username exact
     getPlayer(username) {
         return client({
             method: 'GET',
@@ -106,6 +110,7 @@ class Queries {
         });
     }
 
+    // gets top players limited to 3
     getFeaturedPlayers(){
         return client({
             method: 'GET',
@@ -117,6 +122,7 @@ class Queries {
         })
     }
 
+    // gets top n players
     getTopPlayers(n){
         return client({
             method: 'GET',
@@ -128,6 +134,7 @@ class Queries {
         })
     }
 
+    // gets players with username similar to username limits to n results
     searchPlayersLike(username, n=5){
         return client({
             method: 'GET',
@@ -140,6 +147,7 @@ class Queries {
         })
     }
 
+    // gets players in empire by empire (long) id
     getPlayersInEmpire(empireId) {
         return client({
             method: 'GET',
@@ -150,6 +158,7 @@ class Queries {
         });
     }
 
+    // gets an empire by its slug_name
     getEmpireByName(name){
         return client({
             method: 'GET',
@@ -160,6 +169,7 @@ class Queries {
         });
     }
 
+    // gets an empire by its (long) id number
     getEmpireById(id) {
         return client({
             method: 'GET',
@@ -167,6 +177,7 @@ class Queries {
         });
     }
 
+    // gets top empires bound to feature size of 3
     getFeaturedEmpires(){
         return client({
             method: 'GET',
@@ -178,6 +189,7 @@ class Queries {
         })
     }
 
+    // gets top n empires
     getTopEmpires(n){
         return client({
             method: 'GET',
@@ -189,6 +201,7 @@ class Queries {
         })
     }
 
+    // get empires with display name like limit by n
     searchEmpiresLike(displayName, n=5) {
         return client({
             method: 'GET',
@@ -205,6 +218,7 @@ class Queries {
 
 export const queries = new Queries();
 
+// Render the application
 ReactDOM.render(
     <App />,
     document.getElementById('react')

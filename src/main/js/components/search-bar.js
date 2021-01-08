@@ -4,6 +4,7 @@ import _ from "lodash";
 import { useNavigation } from "react-navi";
 import {queries} from "../app";
 
+// search suggestion object
 const SearchSuggestion = ({
     value,
     isLast
@@ -22,6 +23,7 @@ const SearchSuggestion = ({
     </Box>
 );
 
+// search toggle type
 class SearchToggle extends React.Component {
 
     constructor(props) {
@@ -48,6 +50,7 @@ class SearchToggle extends React.Component {
     }
 }
 
+// search text box
 const SearchText = ({type, size, suggests, onSuggestionsChange}) => {
     const navigation = useNavigation();
     const [searchText, setSearchText] = useState("");
@@ -100,6 +103,7 @@ const SearchText = ({type, size, suggests, onSuggestionsChange}) => {
     )
 }
 
+// combined state holder for text box and option menu
 export class SearchBar extends React.Component{
 
     constructor(props) {

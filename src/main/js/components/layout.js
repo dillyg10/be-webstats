@@ -9,9 +9,9 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 import { Header } from "./header";
 import { Footer } from "./footer";
-// import { SearchWidget } from "../../../";
 import { theme } from "../assets/styles/theme/theme";
 
+// fundemental layout object
 export const Layout = ({
                                                                children,
                                                                navLinks,

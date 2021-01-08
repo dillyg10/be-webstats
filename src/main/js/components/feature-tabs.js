@@ -1,6 +1,7 @@
 import React, { useCallback, useMemo, useState } from "react";
 import { Box, Heading, ResponsiveContext, Text, Video } from "grommet";
 
+// feature tabs
 export const FeatureTabTitle = ({
                                                                     title,
                                                                     selected = false,

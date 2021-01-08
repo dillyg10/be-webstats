@@ -17,6 +17,7 @@ const EmptyMediumBanner = styled.div`
   background: white;
 `;
 
+// small preview for empire to give minimal info
 export const EmpirePreview = ({
                                                                 empire,
                                                                 size = "medium",

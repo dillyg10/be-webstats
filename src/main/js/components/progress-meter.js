@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
 import { Box } from "grommet";
-import { ColorType } from "grommet/utils";
 
 import { useIsMounted } from "../api/use-is-mounted";
 
+// displays progress on a bar that fills up when loaded
 export const ProgressMeter = ({
                                                                 max,
                                                                 value,

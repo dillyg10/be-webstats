@@ -5,6 +5,7 @@ import { useNavigation } from "react-navi";
 import { EmpireInfo, SpinLoader } from "./";
 import {queries} from "../app";
 
+// used for feature empires lists emires with detailed info
 export const EmpireListObjectInternal = ({empire, size}) => {
     const navigation = useNavigation();
 

@@ -4,15 +4,14 @@ import { route } from "navi";
 
 import {
     PlayerInfo,
-    //RaidTable,
     ResourcePage,
     SectionHeading,
     SpinLoader,
     StatBlock,
 } from "../../components";
 import {queries} from "../../app";
-// import { PlayerEventsTable } from "./components";
 
+// Sidebar for player info
 const PlayerSideContent = ({ player }) => (
     <ResponsiveContext.Consumer>
         {(size) => (
@@ -24,6 +23,7 @@ const PlayerSideContent = ({ player }) => (
     </ResponsiveContext.Consumer>
 );
 
+// Player info page found in route /player/:name
 export class Player extends React.Component {
     constructor(props) {
         super(props);
@@ -40,16 +40,6 @@ export class Player extends React.Component {
                 console.log(error);
             })
     }
-    /*
-          "kills" : 10,
-      "deaths" : 5,
-      "objectivesCompleted" : 1,
-      "itemsSold" : 10,
-      "barbariansRaided" : 12,
-      "empiresRaided" : 1,
-      "totalRaids" : 1,
-      "relicsStolen" : 4,
-     */
 
     render() {
         if (this.state.player && this.state.player.entity) {
@@ -123,21 +113,7 @@ export class Player extends React.Component {
                             top: "medium",
                         }}
                     >
-                        {/*<SectionHeading>Raids</SectionHeading>*/}
-                        {/*<Box overflow="scroll">*/}
-                        {/*    <RaidTable raids={data.player.raids} />*/}
-                        {/*</Box>*/}
                     </Box>
-                    {/*<Box*/}
-                    {/*    pad={{*/}
-                    {/*        top: "medium",*/}
-                    {/*    }}*/}
-                    {/*>*/}
-                    {/*    <SectionHeading>Recent Activity</SectionHeading>*/}
-                    {/*    <Box overflow="scroll">*/}
-                    {/*        <PlayerEventsTable events={data.player.events} />*/}
-                    {/*    </Box>*/}
-                    {/*</Box>*/}
                 </ResourcePage>
             );
         }
@@ -145,6 +121,7 @@ export class Player extends React.Component {
     }
 }
 
+// player route object
 export const PlayerRoute = route((req) => {
     return { view: <Player username={req.params.username} /> };
 });

@@ -1,10 +1,10 @@
 import React from "react";
 import { Box, Heading, List, Text } from "grommet";
 import { Twitter } from "grommet-icons";
-import { ColorType } from "grommet/utils";
 import { FaDiscord } from "react-icons/fa";
 import { Link } from "react-navi";
 
+// footer links
 const LINKS = [
     {
         name: "Home",
@@ -20,7 +20,7 @@ const LINKS = [
     },
 ];
 
-
+// social button
 const SocialButton = ({
                                                        children,
                                                        background,
@@ -37,6 +37,7 @@ const SocialButton = ({
     </Box>
 );
 
+// footer object
 export const Footer = () => (
     <Box tag="footer" flex={false} width="100%" margin={{ top: "xlarge" }}>
         <Box

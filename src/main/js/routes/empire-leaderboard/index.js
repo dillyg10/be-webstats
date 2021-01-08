@@ -6,6 +6,7 @@ import { EmpirePreview, SpinLoader } from "../../components";
 
 import {queries} from "../../app";
 
+// top 25 empire leaderboard
 export class EmpireLeaderboard extends React.Component {
 
     constructor(props) {

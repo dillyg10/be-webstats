@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Heading } from "grommet";
 
+// used on info objects to display a header
 export const SectionHeading = ({ children }) => (
     <Box
         border={{

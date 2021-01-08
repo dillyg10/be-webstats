@@ -6,6 +6,7 @@ import { PlayerPreview, SpinLoader } from "../../components";
 
 import {queries} from "../../app";
 
+// top 25 player leaderboard
 export class PlayerLeaderboard extends React.Component {
 
     constructor(props) {

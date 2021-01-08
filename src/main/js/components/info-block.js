@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const PlayNowButton = styled(Box)``;
 
+// info block object used for slash
 export const InfoBlock = ({size= "medium"}) => (
     <Box background="#1C232D" flex="grow" align="center" justify="center">
         <Box pad={size === "medium" ? "large" : "small"}>
@@ -38,26 +39,6 @@ export const InfoBlock = ({size= "medium"}) => (
                 </Text>
             </PlayNowButton>
             <Box margin={{top: "medium"}}>
-                {/*<Text textAlign="center" size="large">*/}
-                {/*    Minecraft Server IP:*/}
-                {/*</Text>*/}
-                {/*<Box justify="center" align="center" margin={{top: "medium"}}>*/}
-                {/*    <div>*/}
-                {/*        <Text*/}
-                {/*            textAlign="center"*/}
-                {/*            color="brand"*/}
-                {/*            style={{*/}
-                {/*                background: "#2B3039",*/}
-                {/*                borderRadius: 6,*/}
-                {/*                padding: "6px 12px 6px 12px",*/}
-                {/*                border: "2px solid #383D46",*/}
-                {/*            }}*/}
-                {/*            weight="bold"*/}
-                {/*        >*/}
-                {/*            Blockempires.com*/}
-                {/*        </Text>*/}
-                {/*    </div>*/}
-                {/*</Box>*/}
             </Box>
         </Box>
     </Box>
