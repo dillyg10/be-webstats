@@ -53,7 +53,7 @@ const FEATURES = [
                 >
                     Raid empires in a quest to become the best player in the world!
                 </Text>
-                <Text type="secondary">Raid..</Text>
+                <Text type="secondary">Raiding is a fun unique mehcanic of the BlockEmpires server. Destroy the empires of your foes!</Text>
             </Box>
         ),
         videoSrc: "https://i.imgur.com/JL7LjXd.mp4",
@@ -73,7 +73,7 @@ const FEATURES = [
                 >
                     Build your own unique plot and stand out amongst other players.
                 </Text>
-                <Text type="secondary">awefawe</Text>
+                <Text type="secondary">See what you can create!</Text>
             </Box>
         ),
         videoSrc: "https://i.imgur.com/JL7LjXd.mp4",
@@ -93,7 +93,7 @@ const FEATURES = [
                 >
                     We love our community, and promise to maintain honor and dignity.
                 </Text>
-                <Text type="secondary">asd</Text>
+                <Text type="secondary">Join us on discord and chat about what can make our server better!</Text>
             </Box>
         ),
         videoSrc: "https://i.imgur.com/JL7LjXd.mp4",
