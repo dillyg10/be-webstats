@@ -11,7 +11,7 @@ This is a living project and will be updated with
 more features.  
   
 A live version can be found on my website  
-[dillyg10.com](http://159.203.167.231:8080)  
+[dillyg10.com](http://blockempires.dillyg10.com)  
   
 Preview:
 ![enter image description here](https://i.imgur.com/QZqbWLn.png)
